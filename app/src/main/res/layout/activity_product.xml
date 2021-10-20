@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.ProductActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/ic_undraw_working_oh83__2_" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bag_spinner"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/bag_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit_text_view"
+        android:hint="@string/enter_product_name"
+        android:maxLength="40"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/bag_rate_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit_text_view"
+        android:hint="@string/enter_product_weight"
+        android:inputType="numberDecimal"
+        android:maxLines="1" />
+    <EditText
+        android:id="@+id/expense_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit_text_view"
+        android:hint="Enter Product Expense"
+        android:inputType="numberDecimal"
+        android:maxLines="1" />
+    <Button
+        android:id="@+id/add_bag_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/btn_edit"
+        android:text="@string/add_product"
+        android:textColor="#ffffff" />
+</LinearLayout>

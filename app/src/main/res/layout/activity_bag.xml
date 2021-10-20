@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.BagActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/ic_undraw_adventure_4hum" />
+
+    <EditText
+        android:id="@+id/bag_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit_text_view"
+        android:hint="@string/enter_bag_name"
+        android:inputType="textPersonName"
+        android:maxLength="40" />
+
+    <EditText
+        android:id="@+id/bag_rate_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edit_text_view"
+        android:hint="@string/enter_bag_price"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/add_bag_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/btn_edit"
+        android:text="@string/add_bag"
+        android:textColor="#ffffff" />
+</LinearLayout>

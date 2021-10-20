@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CalculatorActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="8dp"
+        android:elevation="3dp"
+        app:cardCornerRadius="10dp">
+
+        <Spinner
+            android:id="@+id/bag_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="10dp"
+            android:spinnerMode="dialog" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/bag_rate_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/edit_text_view"
+        android:hint="Bag Price" />
+
+    <Button
+        android:id="@+id/calculator_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/btn_edit"
+        android:text="Calculate"
+        android:textColor="#ffffff" />
+
+    <include layout="@layout/custom_header_for_calculator" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_list_with_rate_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

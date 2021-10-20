@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rate Calculator</string>
+    <string name="product">Product</string>
+    <string name="product_rate_calculator">Product Rate Calculator</string>
+    <string name="enter_bag_name">Enter Bag Name</string>
+    <string name="enter_bag_price">Enter Bag Price</string>
+    <string name="add_bag">Add Bag</string>
+    <string name="enter_product_name">Enter Product Name</string>
+    <string name="enter_product_weight">Enter Product Weight(Grams)</string>
+    <string name="add_product">Add Product</string>
+    <string name="bag">Bag</string>
+</resources>
